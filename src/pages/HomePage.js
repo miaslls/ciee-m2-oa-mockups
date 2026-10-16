@@ -26,7 +26,7 @@ export function HomePage() {
     title.textContent = oa.title
     const bottom = document.createElement('div')
     bottom.className = 'oa-card__bottom'
-    bottom.append(Tag({ text: Number(oa.number) <= 3 ? 'Disponível' : 'A implementar' }))
+    bottom.append(Tag({ text: Number(oa.number) <= 4 ? 'Disponível' : 'A implementar' }))
     const arrow = document.createElement('span')
     arrow.className = 'oa-card__arrow'
     arrow.textContent = '→'
