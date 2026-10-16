@@ -13,7 +13,7 @@ export function BrandMark() {
     logo.hidden = false
     fallback.hidden = true
   })
-  logo.src = '/assets/ciee-logo.png'
+  logo.src = '/assets/logo/logo-CIEE-blue.svg'
   mark.append(fallback, logo)
   return mark
 }

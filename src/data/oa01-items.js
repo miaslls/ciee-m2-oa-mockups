@@ -1,0 +1,67 @@
+export const oa01Items = [
+  {
+    person: '“Atualizei meus dados ontem, mas continua aparecendo que meu cadastro está incompleto.”',
+    attendant: [
+      { text: '“Então, ' },
+      { text: 'você atualizou seus dados ontem, mas a mensagem de cadastro incompleto continua aparecendo', cue: true },
+      { text: '.”' },
+    ],
+    expected: 'recapitular',
+    feedbackTitle: 'RECAPITULAÇÃO',
+    functionVerb: 'recapitula o que foi apresentado',
+    explanation: 'A formulação devolve os dois fatos trazidos pela pessoa sem acrescentar uma conclusão.',
+    evidence: 'A fala retoma a atualização feita ontem e a mensagem que continua aparecendo.',
+  },
+  {
+    person: '“Eu já enviei os documentos e queria saber se ainda falta alguma coisa.”',
+    attendant: [
+      { text: '“' },
+      { text: 'É isso que você precisa confirmar neste momento?', cue: true },
+      { text: '”' },
+    ],
+    expected: 'validar',
+    feedbackTitle: 'VALIDAÇÃO',
+    functionVerb: 'convida a pessoa a validar o entendimento',
+    explanation: 'A pergunta abre espaço para a pessoa confirmar se o entendimento corresponde ao que ela quis comunicar.',
+    evidence: '“É isso que você precisa confirmar” devolve a interpretação como uma pergunta, sem tratá-la como definitiva.',
+  },
+  {
+    person: '“Atualizei meus dados ontem, mas continua aparecendo que meu cadastro está incompleto.”',
+    attendant: [
+      { text: '“' },
+      { text: 'Provavelmente', cue: true },
+      { text: ' o sistema ainda não processou a atualização.”' },
+    ],
+    expected: 'outra',
+    feedbackTitle: 'OUTRA AÇÃO · INFERÊNCIA',
+    functionVerb: 'propõe uma explicação ainda não informada',
+    explanation: 'A formulação acrescenta uma possível causa que a pessoa não apresentou. Isso é uma inferência.',
+    evidence: '“Provavelmente” introduz a hipótese de que o sistema ainda não processou a atualização.',
+  },
+  {
+    person: '“Recebi uma mensagem sobre uma pendência no cadastro.”',
+    attendant: [
+      { text: '“Então você ' },
+      { text: 'precisa reenviar os documentos', cue: true },
+      { text: '.”' },
+    ],
+    expected: 'outra',
+    feedbackTitle: 'OUTRA AÇÃO · ORIENTAÇÃO ANTECIPADA',
+    functionVerb: 'indica uma ação antes de esclarecer a necessidade',
+    explanation: 'A resposta salta para uma orientação antes que a pendência tenha sido suficientemente compreendida.',
+    evidence: '“Precisa reenviar os documentos” já define um próximo passo sem confirmar o que a mensagem de pendência significa.',
+  },
+  {
+    person: '“Eu já fiz o envio e só quero ter certeza de que não ficou nada pendente.”',
+    attendant: [
+      { text: '“' },
+      { text: 'Quero confirmar se compreendi', cue: true },
+      { text: ': sua dúvida agora é saber se ainda existe alguma pendência, certo?”' },
+    ],
+    expected: 'validar',
+    feedbackTitle: 'VALIDAÇÃO',
+    functionVerb: 'confirma a compreensão com a pessoa',
+    explanation: 'A fala busca confirmar se a compreensão corresponde ao que a pessoa quis comunicar. Validar não depende de uma expressão fixa como “é isso?”.',
+    evidence: '“Quero confirmar se compreendi” e “certo?” convidam a pessoa a confirmar essa leitura.',
+  },
+]

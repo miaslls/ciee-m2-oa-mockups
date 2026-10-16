@@ -12,4 +12,4 @@ npm run build
 
 Rotas: `#/`, `#/oa-01`, `#/oa-02`, `#/oa-03`, `#/oa-04`, `#/oa-05`, `#/oa-06`.
 
-Coloque o arquivo oficial do logo em `public/assets/ciee-logo.png`.
+O logo oficial usado no cabeçalho está em `public/assets/logo/logo-CIEE-blue.svg`.
