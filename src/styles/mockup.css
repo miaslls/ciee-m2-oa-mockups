@@ -1,0 +1,19 @@
+.mockup-stage { min-height: 480px; padding: var(--space-8); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); background: var(--white); box-shadow: var(--shadow-soft); }
+.mockup-stage--open { min-height: auto; padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+.oa-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-5); }
+.oa-card { display: flex; flex-direction: column; min-height: 204px; padding: var(--space-6); text-decoration: none; transition: border-color 150ms ease, box-shadow 150ms ease; }
+.oa-card:hover { border-color: var(--ciee-blue-300); box-shadow: 0 10px 26px rgba(0, 27, 85, 0.1); }
+.oa-card__number { color: var(--ciee-blue); font: 700 0.82rem/1.3 var(--font-display); letter-spacing: 0.06em; }
+.oa-card__title { margin-top: var(--space-4); font-size: clamp(1.05rem, 1.45vw, 1.22rem); font-weight: 600; }
+.oa-card__bottom { display: flex; align-items: end; justify-content: space-between; gap: var(--space-3); margin-top: auto; padding-top: var(--space-6); }
+.oa-card__arrow { color: var(--ciee-blue); font: 600 1.3rem/1 var(--font-display); }
+
+@media (max-width: 900px) {
+  .oa-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .mockup-stage { min-height: 400px; padding: var(--space-5); }
+  .mockup-stage--open { min-height: auto; padding: 0; }
+  .oa-grid { grid-template-columns: 1fr; gap: var(--space-4); }
+  .oa-card { min-height: 170px; padding: var(--space-5); }
+}

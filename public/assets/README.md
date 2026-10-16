@@ -1,0 +1,1 @@
+Coloque aqui o arquivo oficial do logo CIEE, preferencialmente como `ciee-logo.png`. O texto exibido enquanto o arquivo estiver ausente é apenas um placeholder de desenvolvimento; não é uma recriação do logo.
